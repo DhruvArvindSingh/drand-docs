@@ -1,0 +1,8 @@
+./babel.config.js
+./src/theme/Layout/index.js
+./src/components/HomepageFeatures/index.tsx
+./src/pages/index.tsx
+./docs/dev-guide/API Documentation v2/sidebar.ts
+./docs/dev-guide/API Documentation v1/sidebar.ts
+./sidebars.ts
+./docusaurus.config.ts
