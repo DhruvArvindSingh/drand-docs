@@ -1,0 +1,208 @@
+Project structure:
+.
+├── README.md
+├── babel.config.js
+├── blog
+│   ├── 2020-08-10-drand-launches-v1.0.md
+│   ├── 2020-08-21-drand-is-hiring.md
+│   ├── 2020-08-21-drand-news-roundup.md
+│   ├── 2021-01-11-qrl-joins-league-of-entropy.md
+│   ├── 2021-04-09-zengo-becomes-the-newest-member-of-the-league-of-entropy.md
+│   ├── 2021-08-10-drand-celebrates-one-year-as-a-randomness-service.md
+│   ├── 2021-09-14-the-value-of-drand.md
+│   ├── 2021-10-28-the-value-of-drand-continued.md
+│   ├── 2022-02-21-multi-frequency-support-and-timelock-encryption-capabilities.md
+│   ├── 2022-03-28-storswift-joining.md
+│   ├── 2022-06-24-drand-at-northsec.md
+│   ├── 2022-08-12-observing-randomness.md
+│   ├── 2022-10-20-cryptosat-takes-drand-to-space.md
+│   ├── 2023-01-23-drand-2022-year-in-review-&-our-2023-roadmap.md
+│   ├── 2023-01-27-ipfsforce-joins-the-loe.md
+│   ├── 2023-02-17-how-to-use-drand.md
+│   ├── 2023-03-14-automata-joins-the-loe.md
+│   ├── 2023-03-15-draffle.md
+│   ├── 2023-03-28-timelock-on-fastnet.md
+│   ├── 2023-04-27-randomness-summit.md
+│   ├── 2023-05-26-tlock-security-assessment.md
+│   ├── 2023-06-02-drand-explainer.md
+│   ├── 2023-06-05-announcing-the-drand-code-walkthroughs.md
+│   ├── 2023-07-03-fastnet-sunset-quicknet-new.md
+│   ├── 2023-09-08-distributed-key-generation.md
+│   ├── 2023-10-16-quicknet-is-live.md
+│   ├── 2024-02-23-testnet-ceremony-post-mortem.md
+│   ├── 2024-07-26-creating-a-notion-widget-to-display-the-latest-pub.md
+│   ├── 2024-09-14-fastnet-sunsetting-dates-set.md
+│   ├── 2025-01-16-on-chain-randomness-gotchas.md
+│   ├── 2025-01-31-how-many-5090-to-break-sha1.md
+│   ├── 2025-03-04-onchain-sealed-bid-auction.md
+│   └── 2025-03-21-drand-v2-0-postmortem.md
+├── codebase_files.txt
+├── docs
+│   ├── about
+│   │   ├── 00-drand-explained.md
+│   │   ├── 01-Governance.md
+│   │   └── _category_.json
+│   ├── concepts
+│   │   ├── 00-Intro-to-drand.md
+│   │   ├── 01-Cryptography.md
+│   │   ├── 02-Security_Model.md
+│   │   ├── 03-Specification.md
+│   │   ├── 04-Timelock_Encryption.md
+│   │   └── _category_.json
+│   ├── dev-guide
+│   │   ├── 00-Getting-started-devs.md
+│   │   ├── 01-Code_Organization.md
+│   │   ├── 02-drand-client_CLI.md
+│   │   ├── 03-Client_Libraries.mdx
+│   │   ├── 04-PubSub_Network_Integration.md
+│   │   ├── 05-Code_Examples.md
+│   │   ├── 06-HTTP-API.md
+│   │   ├── API Documentation v1
+│   │   ├── API Documentation v2
+│   │   ├── _category_.json
+│   │   └── img
+│   ├── drand-community
+│   │   ├── 00-Community-connections.md
+│   │   ├── 01-Contributing.md
+│   │   └── _category_.json
+│   ├── drand-faq
+│   │   ├── 00-FAQ-and-reference-material.md
+│   │   └── _category_.json
+│   ├── home.mdx
+│   ├── img
+│   │   └── drand-logo.png
+│   └── ops-guide
+│       ├── 00-Getting-started-ops.md
+│       ├── 01-Deployment.md
+│       ├── 02-Docker_Install.md
+│       ├── 03-Storage_Backends.md
+│       ├── 04-Metrics_Guide.md
+│       ├── 05-Command-line_Tools.md
+│       └── _category_.json
+├── docusaurus.config.ts
+├── package-lock.json
+├── package.json
+├── project_context.txt
+├── sidebars.ts
+├── src
+│   ├── components
+│   │   └── HomepageFeatures
+│   ├── css
+│   │   ├── blog-sidebar.css
+│   │   └── custom.css
+│   ├── drand-api-v2.yaml
+│   ├── drand-api.yaml
+│   ├── pages
+│   │   ├── index.module.css
+│   │   └── index.tsx
+│   └── theme
+│       └── Layout
+├── static
+│   ├── CNAME
+│   ├── images
+│   │   ├── 2022-02-21-multi-frequency-support-and-timelock-encryption-capabilities
+│   │   ├── 2022-06-24-drand-at-northsec
+│   │   ├── 2022-08-11-observing-randomness
+│   │   ├── 2022-10-20-cryptosat-takes-drand-to-space
+│   │   ├── 2023-01-27-ipfsforce-joins-the-loe
+│   │   ├── 2023-03-15-draffle
+│   │   ├── 2023-09-06-dkg
+│   │   ├── 2023-09-08-dkg
+│   │   ├── 2025-01-16
+│   │   ├── 2025-01-31
+│   │   ├── 2025-03-04-onchain-sealed-bid-auction
+│   │   ├── beacon_id_dispatching.png
+│   │   ├── drand-code-walkthroughs.png
+│   │   ├── drand-launch-banner.png
+│   │   ├── drand_multinetwork_1.png
+│   │   ├── drand_multinetwork_2.png
+│   │   ├── drand_versioning.png
+│   │   ├── randomness_chained.png
+│   │   └── randomness_unchained.png
+│   └── img
+│       ├── Screenshot_2024-07-24_at_15.36.43.png
+│       ├── Screenshot_2024-07-25_at_09.41.46.png
+│       ├── Screenshot_2024-07-25_at_09.41.53.png
+│       ├── StorSwiftLogo.png
+│       ├── banner.avif
+│       ├── biased-randomness.jpeg
+│       ├── chained.e448fb8e.jpg
+│       ├── connect-wallet.083095e5.png
+│       ├── cryptosat-blog-header3.84006631.png
+│       ├── drand-code-walkthroughs.5726ed76.png
+│       ├── drand-logo.png
+│       ├── drand_dash_1.f1a0b363.png
+│       ├── drand_dash_2.f887bda3.png
+│       ├── draw-accepted.2ff1aab6.png
+│       ├── draw-triggered.ac101ff4.png
+│       ├── favicon.ico
+│       ├── graph.3fdd3482.jpg
+│       ├── ipfs-force-logo.18be5e96.png
+│       ├── league-of-entropy.avif
+│       ├── logo-drand-text-right-dark.png
+│       ├── multi-frequency-diagram.avif
+│       ├── northsec-presentation-01.jpg
+│       ├── northsec-presentation-02.jpg
+│       ├── northsec-presentation-03.jpg
+│       ├── pirates-map.b4fa9729.png
+│       ├── start.bdca1319.png
+│       ├── timelock.png
+│       ├── trigger-draw.4356efc5.png
+│       └── unchained.726b44f8.jpg
+├── tsconfig.json
+└── yarn.lock
+
+34 directories, 118 files
+Package.json content:
+{
+  "name": "drand-docs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "docusaurus-plugin-openapi-docs": "^4.3.5",
+    "docusaurus-theme-openapi-docs": "^4.3.5",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/tsconfig": "^3.7.0",
+    "@docusaurus/types": "^3.7.0",
+    "typescript": "~5.5.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
